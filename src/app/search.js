@@ -34,10 +34,6 @@ let handleInput = (event) => {
             let firstFiveResults = data.props.data.results.slice(0, 5)
             
             console.log(firstFiveResults)
-            // return firstFiveResults
-            <SearchResults
-                songData=firstFiveResults[0]
-            ><SearchResults/>
             
         })
 
@@ -57,8 +53,9 @@ export default function Search() {
                 <TextField
                     id="search-bar"
                     onChange={handleInput}
+                    variant="filled"
                 />
-                {/* <SearchResults/> */}
+                <SearchResults/>
             </main>
         </div>
     );

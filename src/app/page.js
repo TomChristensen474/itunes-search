@@ -7,6 +7,9 @@ import Search from "./search";
 export default function Home() {
   return (
     <div className={styles.page}>
+      <p>
+        Search for all your favourite music here!
+      </p>
       <main className={styles.main}>
         {/* <Image
           className={styles.logo}
@@ -17,9 +20,7 @@ export default function Home() {
           priority
         /> */}
         <Search />
-        <text>
-            Search for all your favourite music here!
-        </text>
+        
 
       </main>
       <footer className={styles.footer}>
